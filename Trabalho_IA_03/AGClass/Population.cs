@@ -27,14 +27,10 @@
             for (int i = 0; i < ConfigurationGA.sizePopulation; i++)
             {
                 population[i].CalcFitness();
-
-
-
             }
         }
 
         public void Evaluate()
-
         {
             RefreshIndexIndividual();
             CalculateFitness();

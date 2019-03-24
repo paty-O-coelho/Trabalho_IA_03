@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 
 namespace Trabalho_IA_03.AGClass
-
-
 {
     public class Individual
     {
