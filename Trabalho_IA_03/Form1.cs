@@ -37,12 +37,12 @@ namespace Trabalho_IA_03
         protected override void OnMouseClick(MouseEventArgs e)
         {
             base.OnMouseClick(e);
-            // Console.WriteLine("Point insert");
+
             Pen blackPen = new Pen(Color.Aquamarine, 3);
             int X = e.X;
             int Y = e.Y;
-            // Console.WriteLine("X :" + X + "Y :" + Y);
-            TablePoints.AddPoint(X, Y);
+
+            //TablePoints.AddPoint(X, Y);
 
             Rectangle rec = new Rectangle(X - 5, Y - 5, 10, 10);
             g.DrawEllipse(blackPen, rec);
@@ -79,6 +79,7 @@ namespace Trabalho_IA_03
 
         private void btnCriarPop_Click(object sender, EventArgs e)
         {
+            GeradorDeCoordenadas.GerarCoordenadas();
 
             Individual ind1 = new Individual();
             Individual ind2 = new Individual();

@@ -49,7 +49,7 @@ namespace Trabalho_IA_03.AGClass
         }
 
         /// <summary>
-        /// CALCULAR O FITNES DO INDIVIDUO
+        /// Calcular o fitness do indivíduo.
         /// </summary>
         public void CalcFitness()
         {
@@ -59,11 +59,11 @@ namespace Trabalho_IA_03.AGClass
             {
                 if (i < (ConfigurationGA.sizeChromosome - 1))
                 {
-                    totalDist += TablePoints.getDist(GetGene(i), GetGene(i + 1));
+                    totalDist += TablePoints.GetDist(GetGene(i), GetGene(i + 1));
                 }
                 else
                 {
-                    totalDist += TablePoints.getDist(GetGene(i), GetGene(0));
+                    totalDist += TablePoints.GetDist(GetGene(i), GetGene(0));
                 }
             }
 

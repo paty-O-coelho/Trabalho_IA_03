@@ -42,28 +42,26 @@ namespace Trabalho_IA_03.AGClass
             {
                 for (int j = 0; j < pointCount; j++)//para y
                 {
-                    //Calculo de distancia entre dois pontos
+                    //Cálculo de distância entre dois pontos.
                     tableDist[i, j] = Math.Sqrt(Math.Pow(int.Parse(X[i].ToString())
                                                           - int.Parse(X[j].ToString()), 2)
                                                           + Math.Pow(int.Parse(Y[i].ToString())
                                                           - int.Parse(Y[j].ToString()), 2));
                 }
             }
-            //Atualizar o tamanho do cromossomo
-            //teste
 
+            //Atualizar o tamanho do cromossomo.
             ConfigurationGA.sizeChromosome = pointCount;
-
         }
 
-        //retornar a tabela de distancia
-
-
-        public static double[,] getTableDist()
+        /// <summary>
+        /// Retornar a tabela de distância.
+        /// </summary>
+        /// <returns></returns>
+        public static double[,] GetTableDist()
         {
             return tableDist;
         }
-
 
         /// <summary>
         /// Retornar a distância entre dois pontos.
@@ -71,7 +69,7 @@ namespace Trabalho_IA_03.AGClass
         /// <param name="pointOne"></param>
         /// <param name="pointTwo"></param>
         /// <returns></returns>
-        public static double getDist(int pointOne, int pointTwo)
+        public static double GetDist(int pointOne, int pointTwo)
         {
             return tableDist[pointOne, pointTwo];
         }
@@ -111,7 +109,7 @@ namespace Trabalho_IA_03.AGClass
         /*AQUI ONDE DEVO MUDAR, POIS ESTOU PEGANDO AS COORDENADAS DOS CLICKS
          DEVO, OU CRIAR UM ARRAY COM OS SEUS VALORES OU IMPORTAR UM ARQUIVO */
 
-        public static int[] getCoordinates(int point)
+        public static int[] GetCoordinates(int point)
         {
 
             //aqui eu criei um array para pegar os clcicks de X e Y
@@ -123,23 +121,15 @@ namespace Trabalho_IA_03.AGClass
             return arrayCoordinates;
         }
 
-
-        //limpar dados da tabela
-        public static void clear()
+        /// <summary>
+        ///  Limpar dados da tabela.
+        /// </summary>
+        public static void Clear()
         {
             X.Clear();
             Y.Clear();
             pointCount = 0;
             tableDist = null;
-
         }
-
-
-
-
-
     }
-
-
-
 }
