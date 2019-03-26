@@ -37,12 +37,12 @@ namespace Trabalho_IA_03
         protected override void OnMouseClick(MouseEventArgs e)
         {
             base.OnMouseClick(e);
-            // Console.WriteLine("Point insert");
+
             Pen blackPen = new Pen(Color.Aquamarine, 3);
             int X = e.X;
             int Y = e.Y;
-            // Console.WriteLine("X :" + X + "Y :" + Y);
-            TablePoints.AddPoint(X, Y);
+
+            //TablePoints.AddPoint(X, Y);
 
             Rectangle rec = new Rectangle(X - 5, Y - 5, 10, 10);
             g.DrawEllipse(blackPen, rec);
@@ -56,23 +56,8 @@ namespace Trabalho_IA_03
             lbQtdCidade.Text = pointCount.ToString();
             lbComplex.Text = Fatorial((ulong)pointCount).ToString();
 
-
-            //if (++count >= 4)
-            //{
-            //    btnCriarPop.Enabled = true;
-            //}
-            //if (++count >= 1)
-            //{
-            //    btnLimpar.Enabled = true;
-            //}
-            //else
-            //{
-            //    btnLimpar.Enabled = false;
-
-            //}
             Console.WriteLine(TablePoints.Print());
         }
-
 
         public ulong Fatorial(ulong number)
         {
@@ -81,73 +66,6 @@ namespace Trabalho_IA_03
             else
                 return number * Fatorial(number - 1);
         }
-
-
-        /*
-       private void ploatPonts()
-        {
-            //verificando se a tabela possue pontos
-            if (TablePoints.pointCount > 0)
-            {
-
-                for (int i =0; i < TablePoints.pointCount; i ++)
-                {
-
-                    //criar um lapis
-                    Pen blackPen = new Pen(Color.Red, 3);
-                    //array de coordenadas x e y
-                    int[] coo = TablePoints.gerCoordinates(i);
-                    Rectangle rec = new Rectangle(coo[0] - 5, coo[1] - 5, 10, 10);
-
-                    g.DrawEllipse(blackPen, rec);
-                    g.DrawString((i + 1).ToString(), new Font("Arial Black", 11), Brushes.Black, coo[0]+ 3, coo[1]);
-                    g.DrawString("X :" + coo[0].ToString(), new Font("Arial Black", 6), Brushes.Black, coo[0] - 20, coo[1] - 25);
-                    g.DrawString("Y :" + coo[1].ToString(), new Font("Arial Black", 6), Brushes.Black, coo[0] - 20, coo[1] - 18);
-
-                }
-            }
-
-
-        }*/
-
-
-
-
-        /*
-        private void ploatLines(Population pop, Color color)
-    {
-        Pen penBest = new Pen(color, 3);
-        int genA;
-        int genB; 
-
-
-        Individual best = pop.getBest();
-
-
-        for (int i =0; i< ConfigurationGA.sizeChromossome; i ++)
-        {
-            if (i < CofigurationGA.sizeChromossome -1)
-            {
-                genA = best.getGene(i);
-                genB = best.getGene(i + 1);
-
-
-            }
-            else
-            {
-                genA = best.getGene(i);
-                genB = best.getGene(0);
-            }
-
-            int[] vetA = TablePoints.getCoordinates(genA);
-            int[] vetB = TablePoints.getCoordinates(genB);
-
-            g.DrawLine(penBest, vetA[0], vetA[1], vetB[0], vetB[1]);
-
-        }
-
-
-    }*/
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -161,6 +79,7 @@ namespace Trabalho_IA_03
 
         private void btnCriarPop_Click(object sender, EventArgs e)
         {
+            GeradorDeCoordenadas.GerarCoordenadas();
 
             Individual ind1 = new Individual();
             Individual ind2 = new Individual();

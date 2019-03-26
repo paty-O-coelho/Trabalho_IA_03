@@ -5,7 +5,7 @@
         public Individual[] population;
 
         /// <summary>
-        /// construtor -- inserir os individuos dentro do meu array (popular)
+        /// Inserir os indivíduos(popular) dentro do array.
         /// </summary>
         public Population()
         {
@@ -15,26 +15,23 @@
             {
                 this.population[i] = new Individual();
                 this.population[i].indexOfVector = i;
-
-
             }
-            //avaliar o fitnes
+
             CalculateFitness();
         }
 
+        /// <summary>
+        /// Avaliar o fitnes.
+        /// </summary>
         public void CalculateFitness()
         {
             for (int i = 0; i < ConfigurationGA.sizePopulation; i++)
             {
                 population[i].CalcFitness();
-
-
-
             }
         }
 
         public void Evaluate()
-
         {
             RefreshIndexIndividual();
             CalculateFitness();
@@ -57,7 +54,6 @@
             return this.population;
         }
 
-
         public void SetIndividuals(int position, Individual individual)
         {
             this.population[position] = individual;
@@ -74,7 +70,7 @@
         }
 
         /// <summary>
-        /// metodo para ordenar os individuos, do pior para o melhor
+        /// Método para ordenar os indivíduos do pior para o melhor.
         /// </summary>
         public void OrdenPopulation()
         {
@@ -96,18 +92,17 @@
         }
 
         /// <summary>
-        /// RETORNAR O MELHOR INDIVIDUO
+        /// Retornar o melhor indivíduo.
         /// </summary>
         /// <returns></returns>
         public Individual GetBest()
         {
             OrdenPopulation();
             return population[0];
-
         }
 
         /// <summary>
-        /// retornar o pior individuo
+        /// Retornar o pior individuo
         /// </summary>
         /// <returns></returns>
         public Individual GetBad()
@@ -115,7 +110,6 @@
             OrdenPopulation();
             return population[ConfigurationGA.sizePopulation - 1];
         }
-
 
         public override string ToString()
         {
@@ -128,6 +122,5 @@
             }
             return result;
         }
-
     }
 }

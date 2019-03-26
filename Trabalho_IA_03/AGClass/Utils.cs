@@ -5,7 +5,7 @@ namespace Trabalho_IA_03.AGClass
     public static class Utils
     {
         /// <summary>
-        /// Embaralhar a lista
+        /// Embaralhar a lista.
         /// </summary>
         /// <param name="start"></param>
         /// <param name="end"></param>
@@ -25,10 +25,8 @@ namespace Trabalho_IA_03.AGClass
                 int temp = numbers[i];
                 numbers[i] = numbers[a];
                 numbers[a] = temp;
-
             }
             return numbers.GetRange(0, end);
-
         }
     }
 }

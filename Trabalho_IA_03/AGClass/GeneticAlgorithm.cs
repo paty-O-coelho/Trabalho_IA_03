@@ -82,11 +82,9 @@ namespace Trabalho_IA_03.AGClass
                 int temp = secondPoint;
                 secondPoint = firstPoint;
                 firstPoint = temp;
-
             }
 
             Console.WriteLine(" p1 " + firstPoint + "p2 " + secondPoint);
-
 
             newInd[0] = new Individual();
             newInd[1] = new Individual();
@@ -119,10 +117,8 @@ namespace Trabalho_IA_03.AGClass
 
             for (int i = 0; i < ConfigurationGA.sizeChromosome; i++)
             {
-
                 if ((i <= firstPoint) && (i <= secondPoint))
                     continue;
-
 
                 //troca
                 int n1 = parent1[i];
@@ -132,26 +128,20 @@ namespace Trabalho_IA_03.AGClass
                 int n2 = parent2[i];
                 int m2 = replacement1[n1]; //talvez esteja errado aqui
 
-
-                while (m1 != -1)
+                if (m1 != -1)
                 {
                     n1 = m1;
                     m1 = replacement1[m1];
-
-
                 }
 
-                while (m2 != -1)
+                if (m2 != -1)
                 {
                     n2 = m2;
                     m1 = replacement2[m2];
-
                 }
 
                 offspring1Vector[i] = n1;
                 offspring2Vector[i] = n2;
-
-
             }
             for (int i = 0; i < ConfigurationGA.sizeChromosome; i++)
             {
@@ -163,13 +153,11 @@ namespace Trabalho_IA_03.AGClass
             newInd[1].CalcFitness();
 
             return newInd;
-
         }
 
         public Individual Mutation(Individual ind)
         {
             return null;
-
         }
 
         /// <summary>
