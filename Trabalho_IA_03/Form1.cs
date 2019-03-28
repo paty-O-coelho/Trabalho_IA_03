@@ -13,6 +13,8 @@ using ZedGraph;
 
 namespace Trabalho_IA_03
 {
+   //POR FAVOR LEMBRAR DE COLOCAR OS CODIGOS NO BOTAO DE EXECUTAR/CONTINUAR- AULA 64
+
     public partial class lbteste : Form
     {
         Graphics g;               //desenhar elementos na tela
@@ -26,6 +28,8 @@ namespace Trabalho_IA_03
 
 
         Population pop;
+        int evolucoes =0;
+        double bestAux;
 
         public lbteste()
         {
@@ -111,6 +115,52 @@ namespace Trabalho_IA_03
 
 
         }
+ 
+        //VAI FICAR COMENTANDO ATE EU TESTAR ELE DENTRO DO VISUAL STUDIO
+   
+    private void btnExecutar_Click (object sender, EventArgs e) 
+    {
+
+         btnCriarPop.Enabled= false;
+        float taxaMutacao= float.Parse(txtTaxaMutacao.Text);
+        float taxaCrossover =float.Parse(txtTaxaCrossover.Text);
+        int tornei = int.Parse(txtQtdTorneio.Text);
+
+        bestAux=double.PositiveInInfinity;
+
+        //configurar GA
+        ConfigurationGA.rateCrossover =taxaCrossover;
+        ConfigurationGA.rateMutation = taxaMutacao;
+        ConfigurationGA.numbOfCompetitors =tornei;
+        ConfigurationGA.Mitation mutacao = ConfigurationGA.Mutation.NewIndividual ;
+
+        if (rbNovoIndividual.checked )
+        {
+            mutacao = ConfigurationGA.Mutation.NewIndividual;
+        }
+        else if (rbPopulacao.Checked)
+        {
+            mutacao= ConfigurationGA.Mutation.InPopulation;
+        }
+         else if (rnGenesPop) 
+         {
+             mutacao = ConfigurationGA.Mutation.InPopulation;
+
+         }
+
+
+
+         ///ELETISMO
+         ///Essa parte nao irei implemntar, o professor Aragão disse que nao precisava
+         ///vou deixar para fazer essa parte mais na frente
+
+
+
+    }
+
+   
+
+
 
         private void btnCriarPop_Click(object sender, EventArgs e)
         {
