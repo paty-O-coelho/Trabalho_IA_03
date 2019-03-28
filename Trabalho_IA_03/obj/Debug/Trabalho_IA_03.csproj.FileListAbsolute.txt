@@ -23,3 +23,49 @@ C:\Users\Stanislaw\Documents\Visual Studio 2017\Projects\Trabalho_IA_03\Trabalho
 C:\Users\Stanislaw\Documents\Visual Studio 2017\Projects\Trabalho_IA_03\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.csproj.CopyComplete
 C:\Users\Stanislaw\Documents\Visual Studio 2017\Projects\Trabalho_IA_03\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.exe
 C:\Users\Stanislaw\Documents\Visual Studio 2017\Projects\Trabalho_IA_03\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.pdb
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\Trabalho_IA_03.exe.config
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.exe
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.pdb
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\Trabalho_IA_03.exe
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\Trabalho_IA_03.pdb
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\ZedGraph.xml
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\de\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\es\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\fr\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\hu\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\it\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\ja\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\pt\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\ru\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\sk\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\sv\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\tr\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.csprojResolveAssemblyReference.cache
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.lbteste.resources
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.Properties.Resources.resources
+C:\Fontes-Paty\Trabalho_IA_03-master\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.csproj.GenerateResource.Cache
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\Trabalho_IA_03.exe.config
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.exe
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.pdb
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\Trabalho_IA_03.exe
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\Trabalho_IA_03.pdb
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\ZedGraph.xml
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\de\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\es\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\fr\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\hu\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\it\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\ja\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\pt\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\ru\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\sk\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\sv\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\tr\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.csprojResolveAssemblyReference.cache
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.lbteste.resources
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.Properties.Resources.resources
+C:\Fontes-Paty\caixeiro viajante\Trabalho_IA_03-master\Trabalho_IA_03\obj\Debug\Trabalho_IA_03.csproj.GenerateResource.Cache

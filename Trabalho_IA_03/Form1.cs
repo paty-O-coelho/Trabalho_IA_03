@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Trabalho_IA_03.AGClass;
 using System.IO;
+using ZedGraph;
 
 namespace Trabalho_IA_03
 {
@@ -19,10 +20,29 @@ namespace Trabalho_IA_03
         int pointCount = 0;      //sequenciador para indentificar pontos na tela
 
 
+        //COMPONETES DO GRAFICO
+        private GraphPane paneMedia;
+        private PointPairList mediaPopulacao = new PointPairList();
+
+
+        Population pop;
+
         public lbteste()
         {
             InitializeComponent();
+
+            paneMedia = ZedMedia.GraphPane;
+            paneMedia.Title.Text = "Media da População";
+            paneMedia.XAxis.Title.Text = "Evoluçoes";
+            paneMedia.YAxis.Title.Text = "Media Fitnes";
+            ZedMedia.Refresh();
+
+
+
         }
+
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -74,11 +94,54 @@ namespace Trabalho_IA_03
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
+            ConfigurationGA.sizePopulation = 0;
+            TablePoints.Clear();
+            pop = null;
+
+            lbQtdCidade.Text= "---";
+            btnCriarPop.Enabled = false;
+            btnExecutar.Enabled = false;
+            btnLimpar.Enabled = false;
+
+
+            g.Clear(Color.Blue);
+
+
+
+
 
         }
 
         private void btnCriarPop_Click(object sender, EventArgs e)
         {
+
+
+            ConfigurationGA.sizePopulation = int.Parse(txtTamPop.Text);
+             pop = new Population ();
+            btnExecutar.Enabled = true;
+
+
+
+            ///CODIGOS DE TESTE 
+            ///TODOS OS CODIGOS ABAIXO SO SERVIRAM PARA
+            ///TESTAR A FUNCIONALIDADE NO DECORRER DA
+            ///IMPLEMENTAÇÃO DO ALGORITMO
+
+
+            /*
+            ConfigurationGA.sizeChromosome = 10;
+            ConfigurationGA.numbOfCompetitors = 3;
+
+            Population pop = new Population();
+            GeneticAlgorithm ag = new GeneticAlgorithm();
+
+
+            Console.WriteLine(ag.Tournament(pop));
+            */
+
+            /*
+             * TESTE DO PONTO DE CORTE 
+             * 
             GeradorDeCoordenadas.GerarCoordenadas();
 
             Individual ind1 = new Individual();
@@ -93,11 +156,13 @@ namespace Trabalho_IA_03
 
 
             inds = AG.CrossoverPMX(ind1, ind2);
-            Console.WriteLine("cruuzamento \n");
+            Console.WriteLine(" CRUZAMENTO \n");
 
 
             Console.WriteLine(inds[0]);
             Console.WriteLine(inds[1]);
+
+            */
 
 
 

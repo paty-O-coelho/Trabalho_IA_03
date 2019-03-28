@@ -34,7 +34,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.labelLimpar = new System.Windows.Forms.Label();
-            this.ZedGraphControl1 = new ZedGraph.ZedGraphControl();
+            this.ZedMedia = new ZedGraph.ZedGraphControl();
             this.lbMenorDistancia = new System.Windows.Forms.Label();
             this.Label7 = new System.Windows.Forms.Label();
             this.lbEvolucoes = new System.Windows.Forms.Label();
@@ -74,7 +74,7 @@
             this.Panel1.Controls.Add(this.label11);
             this.Panel1.Controls.Add(this.label9);
             this.Panel1.Controls.Add(this.labelLimpar);
-            this.Panel1.Controls.Add(this.ZedGraphControl1);
+            this.Panel1.Controls.Add(this.ZedMedia);
             this.Panel1.Controls.Add(this.lbMenorDistancia);
             this.Panel1.Controls.Add(this.Label7);
             this.Panel1.Controls.Add(this.lbEvolucoes);
@@ -131,22 +131,22 @@
             this.labelLimpar.TabIndex = 21;
             this.labelLimpar.Text = "Limpar";
             // 
-            // ZedGraphControl1
+            // ZedMedia
             // 
-            this.ZedGraphControl1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ZedGraphControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ZedGraphControl1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ZedGraphControl1.Location = new System.Drawing.Point(11, 279);
-            this.ZedGraphControl1.Name = "ZedGraphControl1";
-            this.ZedGraphControl1.ScrollGrace = 0D;
-            this.ZedGraphControl1.ScrollMaxX = 0D;
-            this.ZedGraphControl1.ScrollMaxY = 0D;
-            this.ZedGraphControl1.ScrollMaxY2 = 0D;
-            this.ZedGraphControl1.ScrollMinX = 0D;
-            this.ZedGraphControl1.ScrollMinY = 0D;
-            this.ZedGraphControl1.ScrollMinY2 = 0D;
-            this.ZedGraphControl1.Size = new System.Drawing.Size(454, 281);
-            this.ZedGraphControl1.TabIndex = 20;
+            this.ZedMedia.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ZedMedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ZedMedia.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ZedMedia.Location = new System.Drawing.Point(11, 279);
+            this.ZedMedia.Name = "ZedMedia";
+            this.ZedMedia.ScrollGrace = 0D;
+            this.ZedMedia.ScrollMaxX = 0D;
+            this.ZedMedia.ScrollMaxY = 0D;
+            this.ZedMedia.ScrollMaxY2 = 0D;
+            this.ZedMedia.ScrollMinX = 0D;
+            this.ZedMedia.ScrollMinY = 0D;
+            this.ZedMedia.ScrollMinY2 = 0D;
+            this.ZedMedia.Size = new System.Drawing.Size(454, 281);
+            this.ZedMedia.TabIndex = 20;
             // 
             // lbMenorDistancia
             // 
@@ -473,7 +473,7 @@
         #endregion
 
         internal System.Windows.Forms.Panel Panel1;
-        internal ZedGraph.ZedGraphControl ZedGraphControl1;
+        internal ZedGraph.ZedGraphControl ZedMedia;
         internal System.Windows.Forms.Label lbMenorDistancia;
         internal System.Windows.Forms.Label Label7;
         internal System.Windows.Forms.Label lbEvolucoes;
