@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-
 
 namespace Trabalho_IA_03.AGClass
 {
@@ -41,7 +39,6 @@ namespace Trabalho_IA_03.AGClass
         public Population ExecuteGA(Population pop)
         {
             /*Criar pop: vem por parametro
-          
             avaliar a pop
             Eletismo
             seleção dos pais
@@ -49,94 +46,6 @@ namespace Trabalho_IA_03.AGClass
             mutação
             avaliação fitnes
             inserir nova pop*/
-
-            Population newPopulation = new Population();
-            list<Individual> popTemp = new list<Individual> ();
-            
-            //atribuir individos a pop temp
-            
-            for (int i =0; i < ConfigurationGA.sizePopulation; i++)
-            {
-                //AJEITAR O ADD
-               // poptemp.Add(pop.GetPopulation()[i]);
-            }
-
-            // Eletismo
-            //VAI FICAR VAIZA, NAO VOU USAR
-
-           
-
-
-            for (int i = 0; i < ConfigurationGA.sizePopulation/2; i++)
-            {
-
-                //seleção dos pais
-                Individual father1 = selection(pop);
-                Individual father2 = selection(pop);
-
-                //cruzamento dos pais
-                double sorte = ConfigurationGA.random.NextDouble();
-
-                if (sorte <= rateCrossover)
-                {
-                    Individual[] children = crossover(father1, father2);
-
-                    
-                    if (ConfigurationGA.mutationType == ConfigurationGA.Mutation. NewIndividual)
-                    {
-                        //Mutação                 
-                        children[0] = Mutation(children[0]);
-                        children[1] = Mutation(children[1]);
-
-                    }
-                    //Rearanjar os filhos no vetor
-
-                    children[0].indexOfVector = father1.indexOfVector;
-                    children[1].indexOfVector = father2.indexOfVector;
-
-
-
-                    /*ta dando erro
-                    popTemp[father1.indexOfVector] = children[0];
-                    popTemp[father2.indexOfVector] = children[1];
-
-                    */
-
-                } 
-                else
-                {
-                  //   popTemp[father1.indexOfVector] = father1;
-                  // popTemp[father2.indexOfVector] = father2;
-
-                }
-
-
-
-            }
-
-
-            //apagar os novos mebros
-            //inserir os novos membros
-
-
-            for (int i=0; i <ConfigurationGA.sizePopulation; i++)
-            {
-                //TA DANDO ERRO AQUI
-                //newPopulation.SetIndividuals(i, popTemp[i]);
-            }
-
-            popTemp = null;
-
-            //aplicação da mutação na pop
-            if (ConfigurationGA.mutationType == ConfigurationGA.Mutation.Inpopulation)
-            {
-                newPopulation = MutationThePopulation(newPopulation);
-
-            }
-
-            ///CAMPO RESEVADO PARA INSERIRI O ALGORITMO DO ELETISMO
-            ///
-
 
             return null;
         }
@@ -175,7 +84,7 @@ namespace Trabalho_IA_03.AGClass
                 firstPoint = temp;
             }
 
-            Console.WriteLine(" p1 " + firstPoint + " p2 " + secondPoint);
+            Console.WriteLine(" p1 " + firstPoint + "p2 " + secondPoint);
 
             newInd[0] = new Individual();
             newInd[1] = new Individual();
@@ -205,8 +114,6 @@ namespace Trabalho_IA_03.AGClass
             }
 
             //troca de geneses repetido
-            ///CONSERTAR ESSA PARTE PARA QUE ELE POSSA PEGAR OS PONTOS DE CORTE CERTOS
-
 
             for (int i = 0; i < ConfigurationGA.sizeChromosome; i++)
             {
@@ -250,33 +157,6 @@ namespace Trabalho_IA_03.AGClass
 
         public Individual Mutation(Individual ind)
         {
-            //Verifica se vai mutar
-            if (ConfigurationGA.random.NextDouble() <= rateMutation)
-            {
-
-                //pontos de swap
-                int genePosition1 = ConfigurationGA.random.Next(0, ConfigurationGA.sizeChromosome - 1);
-                int genePosition2 = ConfigurationGA.random.Next(0, ConfigurationGA.sizeChromosome - 1);
-
-                Console.WriteLine("P1 " + genePosition1 + " P2 "+ genePosition2);
-
-
-                if (genePosition1 == genePosition2)
-                {
-                     if (genePosition2 <= ConfigurationGA.sizeChromosome - 2)
-                      {
-                        genePosition2++;
-
-                       }
-
-                  }
-                ind.Mutate(genePosition1, genePosition2);
-                return ind;
-             
- 
-              }
-
-
             return null;
         }
 
@@ -287,43 +167,7 @@ namespace Trabalho_IA_03.AGClass
         /// <returns></returns>
         public Population MutationThePopulation(Population pop)
         {
-
-            for (int i=0; i < ConfigurationGA.sizeChromosome; i++)
-            {
-
-                //Verifica se vai mutar
-                if (ConfigurationGA.random.NextDouble() <= rateMutation)
-                {
-
-                    //pontos de swap
-                    int genePosition1 = ConfigurationGA.random.Next(0, ConfigurationGA.sizeChromosome - 1);
-                    int genePosition2 = ConfigurationGA.random.Next(0, ConfigurationGA.sizeChromosome - 1);
-
-
-                    if (genePosition1 == genePosition2)
-                    {
-                        if (genePosition2 <= ConfigurationGA.sizeChromosome - 2)
-                        {
-                            genePosition2++;
-
-                        }
-                        else
-                        {
-                            genePosition2 -= 2;
-                        }
-                    }
-
-                    pop.GetPopulation()[i].Mutate(genePosition1, genePosition2);
-                    
-                }
-
-                }
-
-
-
-
-
-            return pop;
+            return null;
         }
 
         /// <summary>
@@ -331,14 +175,10 @@ namespace Trabalho_IA_03.AGClass
         /// </summary>
         /// <param name="pop"></param>
         /// <returns></returns>
-
-
-        /*public Population MutationGenesesOfPopulation(Population pop)
+        public Population MutationGenesesOfPopulation(Population pop)
         {
             return null;
         }
-
-    */
 
         /// <summary>
         /// Seleção por torneio.
@@ -347,41 +187,7 @@ namespace Trabalho_IA_03.AGClass
         /// <returns></returns>
         public Individual Tournament(Population pop)
         {
-
-            Individual[] competitors = new Individual[ConfigurationGA.numbOfCompetitors];
-            Individual aux = new Individual ();
-            aux.SetFitness(float.PositiveInfinity);
-
-
-            //seleção de competidores
-            for (int i=0; i <ConfigurationGA.numbOfCompetitors; i ++)
-            {
-
-                competitors[i] = new Individual();
-                competitors[i] = pop.GetPopulation()[ConfigurationGA.random.Next(0, ConfigurationGA.sizePopulation - 1)];
-
-                Console.WriteLine(competitors[i]);
-
-
-            }
-                
-            //escolher um vencedor
-
-
-            for (int i= 0; i <ConfigurationGA.numbOfCompetitors; i ++)
-            {
-
-                if (competitors[i].GetFitness() < aux.GetFitness() )
-                {
-                    aux = competitors[i];
-                    aux.CalcFitness();
-
-
-                }
-            }
-
-
-            return aux;
+            return null;
         }
     }
 }

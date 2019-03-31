@@ -69,8 +69,6 @@ namespace Trabalho_IA_03.AGClass
         /// <param name="pointOne"></param>
         /// <param name="pointTwo"></param>
         /// <returns></returns>
-
-        //QUEBROU AQUI, ELA ESPERA QUE PASSE DOIS VALORES PRA CA
         public static double GetDist(int pointOne, int pointTwo)
         {
             return tableDist[pointOne, pointTwo];
